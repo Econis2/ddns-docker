@@ -16,8 +16,6 @@ ADD ddns.py /home/ddns/ddns.py
 
 ADD ddns-crontab /etc/cron.d/ddns-cron
 
-RUN chmod 0644 /etc/cron.d/ddns-cron
-
 RUN crontab /etc/cron.d/ddns-cron
 
 RUN touch /var/log/ddns-cron.log
