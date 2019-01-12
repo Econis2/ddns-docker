@@ -2,7 +2,7 @@
 
 FROM alpine:3.8
 
-MAINTAINER Derek Spiner "ryker02@gmail.com"
+MAINTAINER Econis "someuser@github.com"
 
 RUN apk add --no-cache python
 
