@@ -47,7 +47,7 @@ if reg_ip != current_ip:
         }
     ]
 
-    requests.put( godaddy_uri, headers=headers, json=data)
+    requests.put( domain_auth['uri'], headers=headers, json=data)
     
     logThis(logPath, "[" + timeStamp + "] " + reg_ip + " --> " + current_ip)
     exit("[" + timeStamp + "] " + reg_ip + " --> " + current_ip)
