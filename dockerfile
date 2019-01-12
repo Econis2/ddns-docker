@@ -10,7 +10,7 @@ RUN apk add --no-cache py-requests
 
 RUN mkdir /home/ddns
 
-ADD creds /home/ddns/creds
+ADD credentials /home/ddns/credentials
 
 ADD ddns.py /home/ddns/ddns.py
 
@@ -22,6 +22,4 @@ RUN crontab /etc/cron.d/ddns-cron
 
 RUN touch /var/log/ddns-cron.log
 
-RUN crond
-
-CMD /bin/sh
+CMD crond -f
